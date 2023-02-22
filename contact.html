@@ -13,20 +13,49 @@
         <li><a href="despre.html">Despre Noi</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nume</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nume</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" >
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Prenume</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Prenume</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname">
+          </div>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Regiunea</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Trimite</button>
-      </form>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
 </body>
 </html>
